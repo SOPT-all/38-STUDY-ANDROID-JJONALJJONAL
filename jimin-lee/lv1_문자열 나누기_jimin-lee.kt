@@ -18,7 +18,7 @@ class Solution {
             if(same == diff) {
                 slice += 1
                 if (i < s.length-1) {
-                    startS = s[i+1]
+                    standardChar = s[i+1]
                 }
             } else if (same != diff && i == s.length -1){
                 slice += 1
