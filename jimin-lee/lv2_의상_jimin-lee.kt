@@ -1,16 +1,16 @@
 class Solution {
     fun solution(clothes: Array<Array<String>>): Int {
         
-        val map = mutableMapOf<String, Int>()
+        val typeCountMap = mutableMapOf<String, Int>()
         
         for (i in clothes){
             val type = i[1]
-            map[type] = map.getOrDefault(type,0)+1
+            typeCountMap[type] = typeCountMap.getOrDefault(type,0)+1
         }
         
         var answer = 1
         
-        for (i in map.values) {
+        for (i in typeCountMap.values) {
             answer = (i+1) * answer
         }
         
