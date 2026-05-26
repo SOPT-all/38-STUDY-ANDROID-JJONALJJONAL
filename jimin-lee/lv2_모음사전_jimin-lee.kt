@@ -16,6 +16,7 @@ class Solution {
 
             if (char == word) {
                 answer = count
+                return
             }
 
             for (vowel in vowels) {
